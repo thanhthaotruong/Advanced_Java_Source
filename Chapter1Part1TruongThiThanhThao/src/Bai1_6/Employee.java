@@ -1,11 +1,23 @@
 package Bai1_6;
 
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 19 August 2016
+ * Version : 1.0
+ */
 public class Employee {
 	String name;
 	long salary;
 	double coefficientOfSalary;
 	int peopleOfVinegar;
 	long allowance;
+
+	final int INCOME_TAX_1 = 5000000;
+	final int INCOME_TAX_2 = 10000000;
+	final int INCOME_TAX_3 = 18000000;
+	final int INCOME_TAX_4 = 32000000;
+	final int INCOME_TAX_5 = 52000000;
+	final int INCOME_TAX_6 = 80000000;
 
 	public Employee() {
 
@@ -85,20 +97,29 @@ public class Employee {
 	// This method has responsible for calculate tax income of people
 	public double calculateOfTax(double income, double incomeIncludeTax) {
 		double taxOfPeople = 0.0;
-		if (incomeIncludeTax <= 5000000) {
+		if (incomeIncludeTax <= INCOME_TAX_1) {
 			taxOfPeople = 0.05 * incomeIncludeTax;
-		} else if (incomeIncludeTax > 5000000 && incomeIncludeTax <= 10000000) {
-			taxOfPeople = 0.1 * incomeIncludeTax;
-		} else if (incomeIncludeTax > 10000000 && incomeIncludeTax <= 18000000) {
-			taxOfPeople = 0.15 * incomeIncludeTax;
-		} else if (incomeIncludeTax > 18000000 && incomeIncludeTax <= 32000000) {
-			taxOfPeople = 0.2 * incomeIncludeTax;
-		} else if (incomeIncludeTax > 32000000 && incomeIncludeTax <= 52000000) {
-			taxOfPeople = 0.25 * incomeIncludeTax;
-		} else if (incomeIncludeTax > 52000000 && incomeIncludeTax <= 80000000) {
-			taxOfPeople = 0.3 * incomeIncludeTax;
+		} else if (incomeIncludeTax > INCOME_TAX_1 && incomeIncludeTax <= INCOME_TAX_2) {
+			taxOfPeople = 0.05 * INCOME_TAX_1 + 0.1 * (incomeIncludeTax - INCOME_TAX_1);
+		} else if (incomeIncludeTax > INCOME_TAX_2 && incomeIncludeTax <= INCOME_TAX_3) {
+			taxOfPeople = 0.05 * INCOME_TAX_1 + 0.1 * (INCOME_TAX_2 - INCOME_TAX_1)
+					+ 0.15 * (incomeIncludeTax - INCOME_TAX_2);
+		} else if (incomeIncludeTax > INCOME_TAX_3 && incomeIncludeTax <= INCOME_TAX_4) {
+			taxOfPeople = 0.05 * INCOME_TAX_1 + 0.1 * (INCOME_TAX_2 - INCOME_TAX_1)
+					+ 0.15 * (INCOME_TAX_3 - INCOME_TAX_2) + 0.2 * (incomeIncludeTax - INCOME_TAX_3);
+		} else if (incomeIncludeTax > INCOME_TAX_4 && incomeIncludeTax <= INCOME_TAX_5) {
+			taxOfPeople = 0.05 * INCOME_TAX_1 + 0.1 * (INCOME_TAX_2 - INCOME_TAX_1)
+					+ 0.15 * (INCOME_TAX_3 - INCOME_TAX_2) + 0.2 * (INCOME_TAX_4 - INCOME_TAX_3)
+					+ 0.25 * (incomeIncludeTax - INCOME_TAX_4);
+		} else if (incomeIncludeTax > INCOME_TAX_5 && incomeIncludeTax <= INCOME_TAX_6) {
+			taxOfPeople = 0.05 * INCOME_TAX_1 + 0.1 * (INCOME_TAX_2 - INCOME_TAX_1)
+					+ 0.15 * (INCOME_TAX_3 - INCOME_TAX_2) + 0.2 * (INCOME_TAX_4 - INCOME_TAX_3)
+					+ 0.25 * (INCOME_TAX_5 - INCOME_TAX_4) + 0.3 * (incomeIncludeTax - INCOME_TAX_5);
 		} else {
-			taxOfPeople = 0.35 * incomeIncludeTax;
+			taxOfPeople = 0.05 * INCOME_TAX_1 + 0.1 * (INCOME_TAX_2 - INCOME_TAX_1)
+					+ 0.15 * (INCOME_TAX_3 - INCOME_TAX_2) + 0.2 * (INCOME_TAX_4 - INCOME_TAX_3)
+					+ 0.25 * (INCOME_TAX_5 - INCOME_TAX_4) + 0.3 * (INCOME_TAX_6 - INCOME_TAX_5)
+					+ 0.35 * (incomeIncludeTax - INCOME_TAX_6);
 		}
 		return taxOfPeople;
 	}
