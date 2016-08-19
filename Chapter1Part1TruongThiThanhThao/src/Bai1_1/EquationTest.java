@@ -5,7 +5,12 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /* 
- * Test for equation
+ * Author : Truong Thi Thanh Thao
+ * Date : 19 August 2016
+ * Version 1.0
+ * JUnit Test eqation of 2 number
+ * Input no
+ * Output the result of equation
  */
 public class EquationTest {
 	@Test

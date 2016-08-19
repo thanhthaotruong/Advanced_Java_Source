@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import Bai1_3.Point;
-import Bai1_4.CalculationOfCircle;
+
 
 /*
  * Author : Truong Thi Thanh Thao
@@ -19,111 +19,91 @@ public class CircumferenceOfRectangleTest {
 
 	@Test
 	public void testCircumference1() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(1, 1);
+		Rectangle rec = new Rectangle(new Point(1, 1));
 		Point C = new Point(3, 3);
 		double ex = 8.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference2() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(1, 1);
+		Rectangle rec = new Rectangle(new Point(1, 1));
 		Point C = new Point(2, 3);
 		double ex = 6.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference3() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(2, 1);
+		Rectangle rec = new Rectangle(new Point(2, 1));
 		Point C = new Point(3, 3);
 		double ex = 6.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference4() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(3, 3);
+		Rectangle rec = new Rectangle(new Point(3, 3));
 		Point C = new Point(3, 3);
 		double ex = 0.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference5() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(1, 2);
+		Rectangle rec = new Rectangle(new Point(1, 2));
 		Point C = new Point(2, 1);
 		double ex = 4.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference6() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(1, 1);
+		Rectangle rec = new Rectangle(new Point(1, 1));
 		Point C = new Point(3, 3);
 		double ex = 7.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference7() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(1, 1);
+		Rectangle rec = new Rectangle(new Point(1, 1));
 		Point C = new Point(2, 3);
 		double ex = 8.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference8() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(2, 1);
+		Rectangle rec = new Rectangle(new Point(2, 1));
 		Point C = new Point(3, 3);
 		double ex = 8.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference9() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(3, 3);
+		Rectangle rec = new Rectangle(new Point(3, 3));
 		Point C = new Point(3, 3);
 		double ex = 1.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 
 	@Test
 	public void testCircumference10() {
-		Rectangle rec = new Rectangle(new Point());
-
-		Point A = new Point(1, 2);
+		Rectangle rec = new Rectangle(new Point(1, 2));
 		Point C = new Point(2, 1);
 		double ex = 5.0;
-		double ac = rec.circumferenceOfRectangle(A, C);
+		double ac = rec.circumferenceOfRectangle(C);
 		assertEquals(ex, ac, 0.01);
 	}
 

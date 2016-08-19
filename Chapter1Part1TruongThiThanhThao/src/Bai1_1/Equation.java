@@ -1,5 +1,9 @@
 package Bai1_1;
-
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 19 August 2016
+ * Version 1.0
+ */
 public class Equation {
 	int a;
 	int b;

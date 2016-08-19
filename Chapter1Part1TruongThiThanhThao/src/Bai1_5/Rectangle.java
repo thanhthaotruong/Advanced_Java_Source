@@ -23,28 +23,28 @@ public class Rectangle {
 	}
 
 	// This method has responsible for calculate the circumference of Rectangle
-	// input 2 Point
+	// input 1 Point
 	// output circumference
-	public double circumferenceOfRectangle(Point A, Point C) {
-		Point B = new Point(A.getX(), C.getY());
-		Point D = new Point(C.getX(), A.getY());
+	public double circumferenceOfRectangle(Point C) {
+		Point B = new Point(p.getX(), C.getY());
+		Point D = new Point(C.getX(), p.getY());
 
-		double width = p.countDistance(A, B);
-		double length = p.countDistance(A, D);
+		double width = p.countDistance(B);
+		double length = p.countDistance(D);
 
 		double circumference = 2 * (width + length);
 		return circumference;
 	}
 
 	// This method has responsible for calculate the area of Rectangle
-	// input 2 Point
+	// input 1 Point
 	// output area
-	public double areaOfRectangle(Point A, Point C) {
-		Point B = new Point(A.getX(), C.getY());
-		Point D = new Point(C.getX(), A.getY());
+	public double areaOfRectangle(Point C) {
+		Point B = new Point(p.getX(), C.getY());
+		Point D = new Point(C.getX(), p.getY());
 
-		double width = p.countDistance(A, B);
-		double length = p.countDistance(A, D);
+		double width = p.countDistance(B);
+		double length = p.countDistance(D);
 
 		double area = width * length;
 		return area;

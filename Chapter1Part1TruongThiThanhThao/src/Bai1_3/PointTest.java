@@ -12,13 +12,12 @@ import org.junit.Test;
  * output : distance
  */
 public class PointTest {
-	Point p = new Point();
 	@Test
 	public void testDistance1() {
 		Point p1 = new Point(1,1);
 		Point p2 = new Point(2,3);
 		double ex = 2.236;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	
@@ -27,7 +26,7 @@ public class PointTest {
 		Point p1 = new Point(1,1);
 		Point p2 = new Point(1,1);
 		double ex = 0.0;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	
@@ -36,7 +35,7 @@ public class PointTest {
 		Point p1 = new Point(1,3);
 		Point p2 = new Point(2,3);
 		double ex = 1.0;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -44,7 +43,7 @@ public class PointTest {
 		Point p1 = new Point(0,0);
 		Point p2 = new Point(2,3);
 		double ex = 3.605;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -52,7 +51,7 @@ public class PointTest {
 		Point p1 = new Point(1,1);
 		Point p2 = new Point(2,2);
 		double ex = 1.414;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -60,7 +59,7 @@ public class PointTest {
 		Point p1 = new Point(1,0);
 		Point p2 = new Point(5,3);
 		double ex = 6.0;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -68,7 +67,7 @@ public class PointTest {
 		Point p1 = new Point(0,1);
 		Point p2 = new Point(1,0);
 		double ex = 2.414;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -76,7 +75,7 @@ public class PointTest {
 		Point p1 = new Point(3,3);
 		Point p2 = new Point(2,3);
 		double ex = 2.0;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -84,7 +83,7 @@ public class PointTest {
 		Point p1 = new Point(1,1);
 		Point p2 = new Point(4,3);
 		double ex = 4.742;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 	@Test
@@ -92,7 +91,7 @@ public class PointTest {
 		Point p1 = new Point(0,1);
 		Point p2 = new Point(2,3);
 		double ex = 3.828;
-		double ac = p.countDistance(p1,p2);
+		double ac = p1.countDistance(p2);
 		assertEquals(ex, ac,0.01);
 	}
 

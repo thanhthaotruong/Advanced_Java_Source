@@ -26,15 +26,21 @@ public class CalculationOfCircle {
 	}
 	
 	//calculate of Circumference | input 2 point | output circumference
-	public double calculateOfCircumference(Point A, Point B){
-		double radius = p.countDistance(A, B);
+	public double calculateOfCircumference(Point A){
+		if(p.equals(A)){
+			System.out.println("Have no circumference!");
+		}
+		double radius = p.countDistance(A);
 		double circumference = (radius*2)*Math.PI;
 		return circumference;
 	}
 	
 	//calculate of Area | input 2 point | output area
-	public double calculateOfArea(Point A, Point B){
-		double radius = p.countDistance(A, B);
+	public double calculateOfArea(Point A){
+		if(p.equals(A)){
+			System.out.println("Have no area!");
+		}
+		double radius = p.countDistance(A);
 		double area = Math.PI*Math.pow(radius, 2);
 		return area;
 	}

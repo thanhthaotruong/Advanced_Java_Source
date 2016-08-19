@@ -35,9 +35,9 @@ public class Point {
 	}
 
 	// This method has responseible for calculate the distance between 2 point
-	public double countDistance(Point A, Point B) {
+	public double countDistance(Point A) {
 		double distance = 0.0;
-		distance = Math.sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
+		distance = Math.sqrt((A.x - x) * (A.x - x) + (A.y - y) * (A.y - y));
 		return distance;
 	}
 }
