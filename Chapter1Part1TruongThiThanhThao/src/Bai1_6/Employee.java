@@ -7,7 +7,6 @@ package Bai1_6;
  */
 public class Employee {
 	String name;
-	long salary;
 	double coefficientOfSalary;
 	int peopleOfVinegar;
 	long allowance;
@@ -19,24 +18,17 @@ public class Employee {
 	final int INCOME_TAX_5 = 52000000;
 	final int INCOME_TAX_6 = 80000000;
 
+	final int SALARY = 1260000;
+
 	public Employee() {
 
 	}
 
-	public Employee(String name, long salary, double coefficientOfSalary, int peopleOfVinegar, long allowance) {
+	public Employee(String name, double coefficientOfSalary, int peopleOfVinegar, long allowance) {
 		this.name = name;
-		this.salary = salary;
 		this.coefficientOfSalary = coefficientOfSalary;
 		this.peopleOfVinegar = peopleOfVinegar;
 		this.allowance = allowance;
-	}
-
-	public long getSalary() {
-		return salary;
-	}
-
-	public void setSalary(long salary) {
-		this.salary = salary;
 	}
 
 	public String getName() {
@@ -73,7 +65,7 @@ public class Employee {
 
 	// This method has responsible for calculate income
 	public double calculateIncome() {
-		double income = coefficientOfSalary * salary + allowance;
+		double income = coefficientOfSalary * SALARY + allowance;
 		return income;
 
 	}

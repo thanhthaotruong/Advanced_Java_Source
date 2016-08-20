@@ -1,0 +1,31 @@
+package Bai1_7;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+
+public class Run {
+	
+
+	public static void main(String[] args) throws IOException {
+		ListOfCD listCD = new ListOfCD();
+		//enterCD();
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        String choise;
+       // int count = 0;
+        do {
+            System.out.println("what do you want add a CD?Y/N");
+            choise = input.readLine();
+            if (choise.equals("y")) {
+            	listCD.enterCD();
+            	listCD.outputListCD();
+            	System.out.println("Total price is : "+listCD.totalPrice());
+            }
+        } while (choise.equals("y"));
+
+    }
+	
+
+}
