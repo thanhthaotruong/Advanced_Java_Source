@@ -6,13 +6,19 @@ import java.io.InputStreamReader;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 20 August 2016
+ * Version 1.0
+ * Class ListOfCD for manage list CD
+ */
 public class ListOfCD {
 	ArrayList<CD> list = new ArrayList<>();
 
 	public ListOfCD(ArrayList<CD> list) {
 		this.list = list;
 	}
-	
+
 	public ArrayList<CD> getList() {
 		return list;
 	}
@@ -23,8 +29,14 @@ public class ListOfCD {
 
 	public ListOfCD() {
 	}
+
+	/*
+	 * Method enterCD() for add CD into list of CD 
+	 * input no 
+	 * output listCD
+	 */
 	public ArrayList<CD> enterCD() throws IOException {
-		
+
 		CD cd1 = new CD();
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		try {
@@ -45,24 +57,35 @@ public class ListOfCD {
 		}
 		return list;
 	}
+
+	/*
+	 * Method outputListCD for print information of list CD 
+	 * input no 
+	 * output information of list CD
+	 */
 	public ArrayList<CD> outputListCD() {
 		DecimalFormat df = new DecimalFormat("#,###");
 		for (int i = 0; i < list.size(); i++) {
-            System.out.print("CD " + (i+1));
-            System.out.print(" - ID: " + list.get(i).getId() + " |Name: " + list.get(i).getName()
-            		+" |Singer : " + list.get(i).getSinger()+" |Number Of Songs : "+list.get(i).getNumOfSongs()
-            		+" |Price : "+df.format(list.get(i).getPrice())+"\n");
-        }
+			System.out.print("CD " + (i + 1));
+			System.out.print(" - ID: " + list.get(i).getId() + " |Name: " + list.get(i).getName() + " |Singer : "
+					+ list.get(i).getSinger() + " |Number Of Songs : " + list.get(i).getNumOfSongs() + " |Price : "
+					+ df.format(list.get(i).getPrice()) + "\n");
+		}
 		return list;
 	}
 
+	/*
+	 * Method totalPrice for calculate total price of all CD in list CD 
+	 * input no
+	 * output the total price
+	 */
 	public double totalPrice() {
-        double total = 0;
-        for (int i = 0; i < list.size(); i++) {
-            if (!list.isEmpty()) {
-                total += list.get(i).getPrice();
-            }
-        }
-        return total;
-    }
+		double total = 0;
+		for (int i = 0; i < list.size(); i++) {
+			if (!list.isEmpty()) {
+				total += list.get(i).getPrice();
+			}
+		}
+		return total;
+	}
 }

@@ -1,5 +1,9 @@
 package Bai1_7;
-
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 20 August 2016
+ * Version 1.0
+ */
 
 
 public class CD {
