@@ -74,25 +74,26 @@ public class Boat extends Transport implements IUsingFuel, IMoving {
 		this.speedReverse = speedReverse;
 	}
 
-	/*
-	 * Override method callMoving() of IMoving Interface calculate fuel used
-	 */
+	
+	//Override method callMoving() of IMoving Interface calculate fuel used
 	@Override
 	public double callMoving() {
 		double speed = distance / time + speedStraight - speedReverse;
 		return speed;
 	}
 
-	/*
-	 * Override method calUsingFuel() of IUsingFuel Interface calculate fuel
-	 * used
-	 */
+	
+	//Override method calUsingFuel() of IUsingFuel Interface calculate fuel used
+	
 	@Override
 	public double callUsingFuel() {
 		double fuel = distance / (fuelUsing - wasteFuelStart);
 		return fuel;
 	}
-
+	/*
+	*Override method toString() of Transport Class
+	*output information about boat such as : information of transport + weight +capacity +...
+	*/
 	@Override
 	public String toString() {
 		return super.toString() + " |Weight: " + weight + " |Capacity: "

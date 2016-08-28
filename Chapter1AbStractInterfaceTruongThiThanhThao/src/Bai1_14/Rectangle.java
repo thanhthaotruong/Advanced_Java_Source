@@ -30,17 +30,17 @@ public class Rectangle extends Shape {
 		this.height = height;
 	}
 
-	/*
-	 * Override the perimeter() of Shape | The result is 2*(length + height)
-	 */
+	
+	//Override the perimeter() of Shape | The result is 2*(length + height)
+	 
 	@Override
 	public double perimeter() {
 		return (length + height) * 2;
 	}
 
-	/*
-	 * Override the area() of Shape | The result is lenght * height
-	 */
+	
+	//Override the area() of Shape | The result is lenght * height
+	
 	@Override
 	public double area() {
 		return length * height;

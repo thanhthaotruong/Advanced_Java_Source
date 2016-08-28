@@ -24,7 +24,10 @@ public class NonStringedInstrument extends Instrument{
 	public void setUsing(String using) {
 		this.using = using;
 	}
-	
+	/*
+	 * Override method play() of Abstract Instrument
+	 * The result is print information about instrument which has no stringed
+	 */
 	@Override
 	public String play() {
 		return "How to use: "+ using;

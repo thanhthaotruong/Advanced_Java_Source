@@ -50,7 +50,10 @@ public class Car extends Transport implements IMoving, IUsingFuel {
 		double speed = distance / time;
 		return speed;
 	}
-
+	/*
+	*Override method toString() of Transport Class
+	*output information about boat such as : information of transport + gear + model
+	*/
 	@Override
 	public String toString() {
 		return super.toString() + "|Gear: " + gear + " |Model: " + model

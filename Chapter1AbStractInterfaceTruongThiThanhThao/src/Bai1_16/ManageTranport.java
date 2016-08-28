@@ -30,9 +30,9 @@ public class ManageTranport {
 		this.boat = boat;
 	}
 
-	/*
-	 * method for print array car
-	 */
+	
+	//method for print array car
+	 
 	public void outputArrCar() {
 		for (Car c : car) {
 			if (c != null) {
@@ -42,9 +42,9 @@ public class ManageTranport {
 		}
 	}
 
-	/*
-	 * method for print array boat
-	 */
+	
+	//method for print array boat
+	
 	public void outputArrBoat() {
 		for (Boat b : boat) {
 			if (b != null) {
