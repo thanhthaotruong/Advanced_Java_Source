@@ -4,7 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 28 August 2016
+ * Version 1.0
+ * Print information about teacher and student
+ */
 public class HumanMain {
 
 	public static void main(String[] args) throws IOException {
@@ -19,6 +24,7 @@ public class HumanMain {
 			String choise = input.readLine();
 			if (choise.equalsIgnoreCase("n")) {
 				flag = false;
+				//Enter information of human
 			} else if (choise.equalsIgnoreCase("y")) {
 				System.out.println("Enter name : ");
 				String name = input.readLine();
@@ -32,6 +38,7 @@ public class HumanMain {
 				System.out
 						.println("Choose Student or Teacher?(1:Student 2:Teacher)");
 				int choose = Integer.parseInt(input.readLine());
+				//Enter information of teacher
 				if (choose == 2) {
 					System.out.println("Enter chairmain of class : ");
 					String chairManOfClass = input.readLine();
@@ -46,6 +53,7 @@ public class HumanMain {
 					teacher[teacher.length - 1] = t;
 					manage.setTeacher(teacher);
 				} else if (choose == 1) {
+					//Enter information about student
 					System.out.println("Enter student of class : ");
 					String studentOfClass = input.readLine();
 					System.out.println("Enter score of semester I : ");
@@ -61,6 +69,7 @@ public class HumanMain {
 					manage.setSt(student);
 				}
 			}
+			//Print information
 			System.out
 					.println("========================================================================================================");
 			System.out

@@ -5,7 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.DecimalFormat;
 import java.util.Arrays;
-
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 28 August 2016
+ * Version 1.0
+ * Print information about employee
+ */
 public class EmployeeMain {
 
 	public static void main(String[] args) throws IOException {
@@ -22,6 +27,7 @@ public class EmployeeMain {
 				String choise = input.readLine();
 				if (choise.equalsIgnoreCase("n")) {
 					flag = false;
+					//Enter information about employee
 				} else if (choise.equalsIgnoreCase("y")) {
 					System.out.println("Enter your name: ");
 					String name = input.readLine();
@@ -59,6 +65,7 @@ public class EmployeeMain {
 						mn.setPe(pe);
 					}
 				}
+				//Print information
 				System.out
 						.println("=================================================================");
 				System.out

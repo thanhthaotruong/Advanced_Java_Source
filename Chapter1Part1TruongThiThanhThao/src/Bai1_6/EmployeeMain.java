@@ -1,5 +1,10 @@
 package Bai1_6;
-
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 28 August 2016
+ * Version 1.0
+ * calculate income,Income Include Tax, Tax, Salary of employee
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,6 +15,7 @@ public class EmployeeMain {
 	public static void main(String[] args) throws IOException {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		try {
+			//Enter information about employee
 			System.out.println("Enter your name: ");
 			String name = input.readLine();
 			System.out.println("Enter your coefficient of salary: ");
@@ -22,6 +28,7 @@ public class EmployeeMain {
 			Employee e = new Employee(name, coefficientOfSalary, peopleOfVinegar, allowance);
 
 			DecimalFormat df = new DecimalFormat("#,###");
+			//calculate income,Income Include Tax, Tax, Salary of employee
 			double income = e.calculateIncome();
 			System.out.println("Income : " + df.format(income));
 			double incomeIncludeTax = e.calculateIncomeIncludeTax();

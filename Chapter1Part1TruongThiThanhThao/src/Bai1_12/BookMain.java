@@ -5,7 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-
+/*
+ * Author : Truong Thi Thanh Thao
+ * Date : 28 August 2016
+ * Version 1.0
+ * Print information about List Book
+ */
 
 public class BookMain {
 
@@ -23,6 +28,7 @@ public class BookMain {
 	            String choise = input.readLine();
 	            if (choise.equalsIgnoreCase("n")) {
 	                flag = false;
+	                //Enter information about Book
 	            } else if (choise.equalsIgnoreCase("y")) {
 	            	System.out.println("Enter id: ");
 	            	String id = input.readLine();
@@ -62,6 +68,7 @@ public class BookMain {
 	                                                                      
 	                }
 	            }
+	            //Print information
 	            System.out.println("===============================================================");
 	            System.out.println("--------------------------TEXT BOOK----------------------------");
 	            mn.outputTextBook();
