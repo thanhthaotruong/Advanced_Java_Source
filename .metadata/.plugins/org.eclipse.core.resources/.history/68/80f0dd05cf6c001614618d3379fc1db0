@@ -1,0 +1,47 @@
+package Bai1_10_Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import Bai1_10.Teacher;
+
+public class TeacherTest {
+
+	@Test
+	public void testSalary1() {
+		Teacher t = new Teacher("Thao", "09/01/93", "TPHCM", "091735428", 2.67, 15000000, "A12");
+		double ex = ;
+		double ac = t.calculateSalary();
+		assertEquals(ex, ac,0.01);
+	}
+	@Test
+	public void testSalary2() {
+		Teacher t = new Teacher("Anh", "09/10/93", "Binh Thuan", "091735428", 2.6, 20000000, "A12");
+		double ex = ;
+		double ac = t.calculateSalary();
+		assertEquals(ex, ac,0.01);
+	}
+	@Test
+	public void testSalary3() {
+		Teacher t = new Teacher("Thanh", "10/01/93", "Tien Giang", "091735428", 2.5, 15000000, "A12");
+		double ex = ;
+		double ac = t.calculateSalary();
+		assertEquals(ex, ac,0.01);
+	}
+	@Test
+	public void testSalary4() {
+		Teacher t = new Teacher("Quynh", "5/5/1994", "Ben Tre", "091735428", 2.8, 30000000, "A12");
+		double ex = ;
+		double ac = t.calculateSalary();
+		assertEquals(ex, ac,0.01);
+	}
+	@Test
+	public void testSalary5() {
+		Teacher t = new Teacher("Phuoc", "21/09/93", "TPHCM", "091735428", 3.2, 50000000, "A12");
+		double ex = ;
+		double ac = t.calculateSalary();
+		assertEquals(ex, ac,0.01);
+	}
+
+}
