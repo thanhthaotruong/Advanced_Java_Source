@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<don_vi>
+	<nhan_vien>
+		<id>1</id>
+		<ho_ten>Phi Quyet Nguyen</ho_ten>
+		<gioi_tinh>1</gioi_tinh>
+		<ngay_sinh>1973-08-31</ngay_sinh>
+		<muc_luong>5200000</muc_luong>
+		<dia_chi>424C Phuong 4- Quan 10- Tinh/TP CC</dia_chi>
+		<id_don_vi>1</id_don_vi>
+	</nhan_vien>
+	<nhan_vien>
+		<id>2</id>
+		<ho_ten>Truong Thi Thanh Thao</ho_ten>
+		<gioi_tinh>0</gioi_tinh>
+		<ngay_sinh>1993-01-09</ngay_sinh>
+		<muc_luong>7000000</muc_luong>
+		<dia_chi>48B4 KP3- P.Phu Khuong- TPBT</dia_chi>
+		<id_don_vi>1</id_don_vi>
+	</nhan_vien>
+	<nhan_vien>
+		<id>3</id>
+		<ho_ten>Truong Ngoc Tinh Anh</ho_ten>
+		<gioi_tinh>0</gioi_tinh>
+		<ngay_sinh>1993-12-08</ngay_sinh>
+		<muc_luong>6500000</muc_luong>
+		<dia_chi>48B4- KP5- P.3- Lagi</dia_chi>
+		<id_don_vi>2</id_don_vi>
+	</nhan_vien>
+	<nhan_vien>
+		<ho_ten>Phuong Thanh</ho_ten>
+		<gioi_tinh>0</gioi_tinh>
+		<ngay_sinh>09/01/1993</ngay_sinh>
+		<muc_luong>12000000</muc_luong>
+		<dia_chi>Thu Duc TP.HCM</dia_chi>
+		<id_don_vi>2</id_don_vi>
+	</nhan_vien>
+</don_vi>

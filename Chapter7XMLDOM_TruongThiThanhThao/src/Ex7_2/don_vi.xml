@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cong_ty>
+	<don_vi>
+		<id>1</id>
+		<ten>Phan xuong san xuat</ten>
+	</don_vi>
+	<don_vi>
+		<id>2</id>
+		<ten>Phan xuong dong goi</ten>
+	</don_vi>
+</cong_ty>
